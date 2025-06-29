@@ -2,21 +2,21 @@
   "endDate": "2025-09-01",
   "participants": [
     {
-      "name": "Анна",
-      "startWeight": 85,
-      "targetWeight": 75,
+      "name": "Vasily",
+      "startWeight": 132,
+      "targetWeight": 122,
       "records": [
-        { "date": "2025-06-29", "weight": 85 },
-        { "date": "2025-07-06", "weight": 83.5 }
+        { "date": "2025-06-26", "weight": 132 },
+        { "date": "2025-06-29", "weight": 131.9 }
       ]
     },
     {
-      "name": "Игорь",
-      "startWeight": 105,
-      "targetWeight": 90,
+      "name": "Aleksei",
+      "startWeight": 104,
+      "targetWeight": 99,
       "records": [
-        { "date": "2025-06-29", "weight": 105 },
-        { "date": "2025-07-06", "weight": 103 }
+        { "date": "2025-06-26", "weight": 104 },
+        { "date": "2025-06-29", "weight": 103.9 }
       ]
     }
   ]

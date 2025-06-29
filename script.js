@@ -1,5 +1,5 @@
 async function loadData() {
-  const response = await fetch('data/progress.json');
+  const response = await fetch(`data/progress.json?t=${Date.now()}`); // disables caching
   const data = await response.json();
   return data;
 }

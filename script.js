@@ -16,7 +16,7 @@ function renderCountdown(endDateStr) {
   const now = new Date();
   const diff = endDate - now;
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
-  document.getElementById('countdown').textContent = `До окончания челленджа осталось ${daysLeft} дн.`;
+  document.getElementById('countdown').textContent = `Days remaining: ${daysLeft}`;
 }
 
 function renderParticipants(participants) {
@@ -31,10 +31,11 @@ function renderParticipants(participants) {
     card.className = 'card';
     card.innerHTML = `
       <h2>${p.name}</h2>
-      <p>Текущий вес: ${latest.weight} кг</p>
-      <p>Цель: ${p.targetWeight} кг</p>
-      <p>Сброшено: ${done.toFixed(1)} кг</p>
-      <p>Осталось: ${remaining.toFixed(1)} кг</p>
+      <p>Start weight: ${p.startWeight} kg</p>
+      <p>Current weight: ${latest.weight} kg</p>
+      <p>Target weight: ${p.targetWeight} kg</p>
+      <p>Lost: ${done.toFixed(1)} kg</p>
+      <p>Remaining: ${remaining.toFixed(1)} kg</p>
       <div class="progress-bar"><div class="progress-fill" style="width:${percent}%;"></div></div>
     `;
     container.appendChild(card);
@@ -60,14 +61,14 @@ function renderChart(participants) {
       plugins: {
         title: {
           display: true,
-          text: 'Изменение веса'
+          text: 'Weight Progress Over Time'
         }
       },
       scales: {
         y: {
           title: {
             display: true,
-            text: 'Вес (кг)'
+            text: 'Weight (kg)'
           }
         }
       }

@@ -16,6 +16,7 @@ function renderCountdown(endDateStr) {
   const now = new Date();
   const diff = endDate - now;
   const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  document.getElementById('endDate').textContent = `End date: ${endDateStr}`;
   document.getElementById('countdown').textContent = `Days remaining: ${daysLeft}`;
 }
 

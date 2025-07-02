@@ -2,7 +2,7 @@
   "endDate": "2025-11-01",
   "participants": [
     {
-      "name": "Vasily",
+      "name": "Alfred",
       "startWeight": 132,
       "targetWeight": 122,
       "records": [
@@ -16,7 +16,6 @@
       "targetWeight": 99,
       "records": [
         { "date": "2025-06-26", "weight": 104 },
-        { "date": "2025-06-29", "weight": 103.9 }
         { "date": "2025-06-29", "weight": 103.9 }
       ]
     }
